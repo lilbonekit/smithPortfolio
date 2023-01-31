@@ -1,0 +1,32 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    transition: all 0.3s ease;
+    span {
+        border-radius: 50px;
+        display: block;
+        width: 70%;
+        height: 3px;
+        background-color: $black-color;
+        transition: all 0.5s ease;
+    }
+    span.long {
+        width: 100%;
+    }
+    &:hover {
+/*         align-items: flex-start; */
+        gap: 10px;
+        span {
+            width: 100%;
+            background: $main-color;
+        }
+    }
+}
