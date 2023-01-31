@@ -1,0 +1,27 @@
+.button {
+    background-color: $main-color;
+    color: $black-color;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 20px 40px;
+    font-weight: 600;
+    border-radius: 120px;
+    height: 61px;
+    transition: all 0.3s ease;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.button_nonebg {
+    color: $black-color;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $main-color;
+        text-decoration: none;
+    }
+}

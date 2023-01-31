@@ -1,0 +1,21 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/buttons';
+@import 'blocks/aside';
+@import 'blocks/hero';
+@import 'blocks/titles';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+

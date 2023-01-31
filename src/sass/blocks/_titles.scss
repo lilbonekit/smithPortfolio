@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+    color: $black-color;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.2em;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    color: $black-color;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    text-transform: none;
+}
+
+.before {
+    &:before{
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

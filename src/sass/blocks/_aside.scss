@@ -1,0 +1,40 @@
+.divider {
+    width: 70px;
+    height: 2px;
+    background: $black-color;
+}
+
+aside {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: $black-color;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -100px;
+    p {
+        margin: 0;
+    }
+    opacity: 0.9;
+}
+
+.socials {
+    &__wrapper {
+        display: flex;
+        gap: 5px;
+    }
+    
+}
+
+.socials__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    img {
+        width: 80%;
+    }
+}

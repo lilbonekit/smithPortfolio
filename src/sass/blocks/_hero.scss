@@ -1,0 +1,16 @@
+.hero {
+    height: 100vh;
+    background: url(../img/main_bg.jpg) center 50%/cover no-repeat;
+    &__txt {
+        width: 700px;
+        padding-top: 206px;
+    }
+    &__btns {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        margin-right: 30px;
+    }
+}
