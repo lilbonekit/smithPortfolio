@@ -9,5 +9,5 @@ hamburger.addEventListener('click', () => {
 
 closeElem.addEventListener('click', () => {
     menu.classList.remove('menu_active');
-    hamburger.style.left = '1';
+    hamburger.style.opacity = '1';
 });

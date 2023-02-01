@@ -1,0 +1,19 @@
+.rounded-img {
+    img {
+        width: 120%;
+    }
+    &::before {
+        content: '';
+        display: block;
+        background: $main-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    padding: 15px 0 0 15px;
+    position: relative;
+}
