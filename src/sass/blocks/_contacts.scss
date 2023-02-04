@@ -24,7 +24,7 @@
     &__form {
         margin-top: 30px;
         display: grid;
-        grid-template: 45px 190px 45px / repeat(2, 280px);
+        grid-template: 45px 190px auto / repeat(2, 280px);
         row-gap: 30px;
     }
     &__input {
@@ -55,6 +55,7 @@
         font-weight: 700;
         color: $black-color;
         white-space: nowrap;
+        grid-column: 1 / 3;
         a { 
             width: 100%;
             color: $black-color;
@@ -63,6 +64,24 @@
                 text-decoration: none;
                 color: white;
             }
+        }
+    }
+    &__submit {
+        display: grid;
+        grid-column: 1 / 3;
+        gap: 10px;
+    }
+    &__policy {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        input {
+            width: 16px;
+            height: 16px;
         }
     }
     .menu__socials {

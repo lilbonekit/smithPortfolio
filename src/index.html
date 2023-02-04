@@ -409,19 +409,23 @@
                         <p>Или оставьте ваши данные и я сама вам напишу:</p>
                         <form action="#" class="contacts__form">
                             <div class="contacts__input">
-                                <input type="text" name="name" id="name">
+                                <input required type="text" name="name" id="name">
                                 <label for="name">Ваше имя</label>
                             </div>
                             <div class="contacts__input">
-                                <input type="email" name="email" id="email">
+                                <input required type="email" name="email" id="email">
                                 <label for="name">Ваша почта</label>
                             </div>
                             <div class="contacts__textarea">
-                                <textarea name="text" id="text"></textarea>
+                                <textarea required name="text" id="text"></textarea>
                                 <label for="name">Ваше сообщение</label>
                             </div>
                             <div class="contacts__submit">
                                 <button class="contacts__button button"><a href="#">Отправить сообщение</a></button>
+                                <div class="contacts__policy">
+                                    <input required type="checkbox">
+                                    <span>Я согласен(а) с <a href="privacy.html" class="policy-link">политикой конфиденциальности</a></span>
+                                </div>
                             </div>
                         </form>
                     </div>
