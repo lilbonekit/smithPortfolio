@@ -11,3 +11,10 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('menu_active');
     hamburger.style.opacity = '1';
 });
+
+const counters = document.querySelectorAll('.progress__per'),
+      progressBar = document.querySelectorAll('.progress__progress');
+
+counters.forEach( (item, i) => {
+    progressBar[i].style.width = item.innerHTML;
+});

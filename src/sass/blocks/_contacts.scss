@@ -1,0 +1,86 @@
+.contacts {
+    padding: 120px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            font-size: 12px;
+            line-height: 18px;
+            color: $black-color;
+            padding: 0 8px;
+            background: white;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+    }
+    &__desc {
+        p {
+            margin: 20px 0 0 0;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        row-gap: 30px;
+    }
+    &__input {
+        position: relative;
+        input {
+            border-radius: 10px;
+            border: 1px solid $black-color;
+            height: 100%;
+            padding: 10px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        width: 100%;
+        textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid $black-color;
+            width: 100%;
+            height: 100%;
+            resize: none;
+        }
+    }
+    &__button {
+        border: none;
+        width: 100%;
+        font-weight: 700;
+        color: $black-color;
+        white-space: nowrap;
+        a { 
+            width: 100%;
+            color: $black-color;
+            transition: all .3s ease;
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .menu__socials {
+        position: inherit;
+        transform: translateX(0);
+        justify-content: start;
+        margin-top: 20px;
+            span {
+                &:hover {
+                    svg {
+                        path {
+                            transition: 0.3s all ease;
+                            fill: $main-color; 
+                        }
+                        fill: $main-color; 
+                        transition: 0.3s all ease;
+                    }
+                }
+            }
+    }
+}

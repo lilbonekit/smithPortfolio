@@ -19,6 +19,9 @@ h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 60px;
+}
+
+.title-divider {
     &::after {
         margin-top: 6px;
         content: '';
@@ -27,6 +30,11 @@ h2 {
         border-radius: 50px;
         height: 3px;
         background: $main-color;
+    }
+    &_middle {
+        &::after {
+            margin: 6px auto 0 auto;
+        }
     }
 }
 
@@ -58,5 +66,15 @@ h3 {
         z-index: -1;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &_middle     {
+        padding: 0;
+        text-align: center;
+        position: relative;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: auto;            
+        }
     }
 }
