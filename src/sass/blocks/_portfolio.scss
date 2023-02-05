@@ -12,6 +12,7 @@
         margin-top: 60px;
         display: grid;
         grid-template: repeat(2, 280px) / repeat(auto-fill, 280px);
+        grid-auto-rows: 280px;
         gap: 5px;
         justify-content: center;
     }
@@ -43,6 +44,7 @@ h4.title-divider_middle {
 
 .price {
     &__wrapper {
+        padding: 0 20px 0 40px;
         margin-top: 60px;
         display: grid;
         grid-template: repeat(3, auto) / repeat(2, 370px) ;
